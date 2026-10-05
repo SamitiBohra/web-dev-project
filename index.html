@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hub</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <nav>
+        <span class="name">TH• Tech Hub</span>
+        <span>Explore</span>
+        <span>Learn</span>
+        <span>Compete</span>
+        <span>Events</span>
+        <button id="themeToggle">☀️ Light Mode</button>
+    </nav>
+
+
+    <main>
+
+        <h4>YOUR TECH JOURNEY STARTS HERE.</h4>
+        <h1>Tech Hub</h1>
+        <pre>
+Discover opportunities.
+Learn valuable skills.
+Build your future.
+        </pre>
+
+    </main>
+
+
+    <section class="opp">
+
+        <h2>What Are You Looking For?</h2>
+        <p>Find the right opportunities to grow your tech journey.</p>
+        <div class="oppall">
+
+            <div class="oppbox">
+                <h3>📚 Learn</h3>
+                <p>Courses, tutorials and resources.</p>
+            </div>
+
+            <div class="oppbox">
+                <h3>🛠 Build</h3>
+                <p>Projects and ideas to create.</p>
+            </div>
+
+            <div class="oppbox">
+                <h3>🏆 Compete</h3>
+                <p>Contests, hackathons and challenges.</p>
+            </div>
+
+            <div class="oppbox">
+                <h3>💼 Career</h3>
+                <p>Internships and career opportunities.</p>
+            </div>
+
+            <div class="oppbox">
+                <h3>🚀 Events</h3>
+                <p>Workshops, meetups and tech events.</p>
+            </div>
+
+            <div class="oppbox">
+                <h3>👥 Community</h3>
+                <p>Connect with other tech enthusiasts.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="trend">
+        <h2>Trending Opportunities</h2>
+        <div class="trendsab">
+
+            <div class="trendspe">
+                <span class="topic">HACKATHON</span>
+                <h3>Build Something Amazing</h3>
+                <p>Participate in a hackathon and turn your ideas into real projects.</p>
+            </div>
+
+            <div class="trendspe">
+                <span class="topic">COMPETITIVE PROGRAMMING</span>
+                <h3>Test Your Problem Solving</h3>
+                <p>Challenge yourself with programming contests and improve your problem-solving skills.</p>
+            </div>
+
+            <div class="trendspe">
+                <span class="topic">WORKSHOP</span>
+                <h3>Learn From Experts</h3>
+                <p>Explore workshops and sessions covering different areas of technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h3>TH• Tech Hub</h3>
+            <p>Your journey. Your skills. Your future.</p>
+        </div>
+
+        <div class="links">
+            <span>About</span>
+            <span>Contact</span>
+            <span>Community</span>
+        </div>
+
+    </footer>
+
+    <script>
+    const themeToggle = document.getElementById("themeToggle");
+
+themeToggle.addEventListener("click", function() {
+    document.body.classList.toggle("light");
+
+    if (document.body.classList.contains("light")) {
+        themeToggle.textContent = "🌙 Dark Mode";
+    } else {
+        themeToggle.textContent = "☀️ Light Mode";
+    }
+});
+</script>
+</body>
+</html>
